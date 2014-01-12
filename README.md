@@ -1,4 +1,4 @@
-# m-nearby-promo
+# m-promos-nearby
 
 Mobile App to share and find promotions in the vicinity.
 
