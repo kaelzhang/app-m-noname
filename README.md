@@ -7,9 +7,13 @@ Mobile App to share and find promotions in the vicinity.
 First, install [nodejs](http://nodejs.org)
 
 Install cortex
-	
-	npm install -g cortex # maybe you should use `sudo`
-	
+
+```sh	
+npm install -g cortex # maybe you should use `sudo`
+```	
+
 Then
 
-	bash start.sh
+```sh
+bash start.sh
+```
