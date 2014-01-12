@@ -1,3 +1,3 @@
-var app = require('./js/app');
+'use strict';
 
-module.exports = app;
+module.exports = require('./lib/app');

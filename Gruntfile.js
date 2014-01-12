@@ -4,16 +4,16 @@ module.exports = function (grunt) {
 
         tpl2mod: {
             html: {
-            options: {
-                prefix:"module.exports= ",
-                suffix:";"
-            },
+                options: {
+                    prefix:"module.exports= ",
+                    suffix:";"
+                },
                 files: [{
-                    expand:true,
-                    cwd:"js",
-                    src:["**/*.html"],
-                    dest:"js",
-                    ext:'.html.js'
+                    expand: true,
+                    cwd: "lib",
+                    src: [ "view/*.html" ],
+                    dest: "lib",
+                    ext: '.html.js'
                 }]
             }
         },
@@ -24,23 +24,11 @@ module.exports = function (grunt) {
                   "css/style.css": "less/style.less"
                 }
             }
-        },
-        watch: {
-            styles: {
-                files: '**/*.less',
-                tasks: ['less']
-            },
-            html: {
-                files: 'js/modules/**/*.html',
-                tasks: ['tpl2mod']
-            }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-tpl2mod');
 
-
-    grunt.registerTask('default', ['less']);
+    grunt.registerTask('default', ['less', 'tpl2mod']);
 };
