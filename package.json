@@ -1,0 +1,45 @@
+{
+    "name": "app-m-promos-nearby",
+    "version": "0.0.0",
+    "description": "Share and find promotions in the vicinity.",
+    "main": "index.js",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-watch": "~0.5.3",
+        "mocha": "~1.13.0",
+        "expect.js": "~0.2.0",
+        "grunt-contrib-less": "~0.7.0",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-copy": "~0.4.1",
+        "grunt-contrib-uglify": "~0.2.7",
+        "grunt-tpl2mod": "~0.1.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:kaelzhang/app-m-noname.git"
+    },
+    "keywords": [
+        "app",
+        "cortex"
+    ],
+    "author": "kael",
+    "license": "MIT",
+    "cortex": {
+        "dependencies": {
+            "wepp": "~0.2.0",
+            "underscore": "~1.5.0",
+            "backbone": "~1.1.0",
+            "zepto": "~1.1.0",
+            "iscroll": "~5.0.0",
+            "marionette": "~1.4.0",
+            "cookie": "~0.1.0",
+            "wepp-module-layout": "~0.1.0"
+        }
+    },
+    "entries": [
+        "./lib/pages/*.js"
+    ]
+}
