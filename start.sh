@@ -1,5 +1,11 @@
 #!/bin/bash
 
+########################################################
+
+STATIC_PORT=9098
+
+#########################################################
+
 # install npm dependencies
 npm install
 
@@ -13,4 +19,4 @@ cortex install
 cortex server &> /dev/null || echo "WARNING: cortex server might be already started"
 
 # start static and mock server
-node tools/server.js && open ./html/index.html || echo "FATAL: fails to start local server"
+anywhere "$STATIC_PORT"
