@@ -1,42 +1,45 @@
 {
-    "name": "app-m-promos-nearby",
-    "version": "0.0.0",
-    "description": "Share and find promotions in the vicinity.",
-    "main": "index.js",
-    "devDependencies": {
-        "grunt": "~0.4.1",
-        "grunt-contrib-less": "~0.7.0",
-        "grunt-tpl2mod": "~0.1.1"
+  "name": "app-m-promos-nearby",
+  "version": "0.0.0",
+  "description": "Share and find promotions in the vicinity.",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-tpl2mod": "~0.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kaelzhang/app-m-noname.git"
+  },
+  "keywords": [
+    "app",
+    "cortex"
+  ],
+  "author": "kael",
+  "license": "MIT",
+  "cortex": {
+    "dependencies": {
+      "wepp": "~0.2.0",
+      "underscore": "~1.5.0",
+      "backbone": "~1.1.0",
+      "zepto": "~1.1.0",
+      "iscroll": "~5.0.0",
+      "marionette": "~1.4.0",
+      "cookie": "~0.1.0",
+      "wepp-module-layout": "~0.1.0"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:kaelzhang/app-m-noname.git"
-    },
-    "keywords": [
-        "app",
-        "cortex"
-    ],
-    "author": "kael",
-    "license": "MIT",
-    "cortex": {
-        "dependencies": {
-            "wepp": "~0.2.0",
-            "underscore": "~1.5.0",
-            "backbone": "~1.1.0",
-            "zepto": "~1.1.0",
-            "iscroll": "~5.0.0",
-            "marionette": "~1.4.0",
-            "cookie": "~0.1.0",
-            "wepp-module-layout": "~0.1.0"
-        },
-        "scripts": {
-            "prebuild": "grunt"
-        }
-    },
-    "entries": [
-        "./lib/pages/*.js"
-    ]
+      "prebuild": "grunt"
+    }
+  },
+  "entries": [
+    "./lib/pages/*.js"
+  ],
+  "dependencies": {
+    "connect": "~2.12.0"
+  }
 }

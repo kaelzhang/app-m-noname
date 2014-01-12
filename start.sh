@@ -19,4 +19,4 @@ cortex install
 cortex server &> /dev/null || echo "WARNING: cortex server might be already started"
 
 # start static and mock server
-anywhere "$STATIC_PORT"
+node tools/server.js "$STATIC_PORT"

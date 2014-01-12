@@ -10,7 +10,6 @@ Install cortex and anywhere
 
 ```sh	
 npm install -g cortex # maybe you should use `sudo`
-npm install -g anywhere
 ```	
 
 Then
