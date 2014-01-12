@@ -10,9 +10,9 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: "lib",
-                    src: [ "view/*.html" ],
-                    dest: "lib",
+                    cwd: "lib/template",
+                    src: [ "*.html" ],
+                    dest: "lib/view",
                     ext: '.html.js'
                 }]
             }
